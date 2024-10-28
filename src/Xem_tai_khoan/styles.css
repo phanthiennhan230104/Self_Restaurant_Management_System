@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid black; 
+    width: 950px;
+    height: 650px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 0%;
+    height: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    background-color: #f0f0f0;
+    padding: 0px;
+    margin-top: 20px;
+    width: 30%;
+    text-align: left;
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+    margin: 10px; 
+}
+
+.menu-icon {
+    display: flex;
+    gap: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.logo {
+    font-size: 23px;
+    align-items: center;
+    font-weight: bold;
+    text-shadow: 2px 8px 4px rgba(0, 0, 0, 0.3);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.profile-icon img {
+    /* margin-right: 0px; */
+    margin-left: 10px;
+}
+
+.divider {
+    width: 2px; 
+    height: 95%; 
+    background-color: black; 
+    margin: 10px 0px; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    width: 70%;
+}
+
+h1 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.account-list {
+    background-color: #07b7f7;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%; 
+    /* max-width: 800px; */
+}
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+    font-weight: normal;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 40px ;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    height: 40px;
+}
+
+th {
+    background-color: #07b7f7;
+}
+
+td {
+    background-color: #07b7f7;
+}

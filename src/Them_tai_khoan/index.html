@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="menu-icon">
+            <img src="https://cdn.icon-icons.com/icons2/1129/PNG/512/menubuttonofthreelines_79781.png" alt="Menu icon" width="20" height="30">
+        </div>
+        <div class="logo"> SELF RESTAURANT
+        </div>
+        <div class="profile-icon">
+            <img src="https://cdn-icons-png.flaticon.com/128/2522/2522138.png" alt="Profile Icon" width="30" height="30">
+        </div>
+    </header>
+    <div class="divider"></div>
+    <main>
+        <h1><b>ADD ACCOUNT</b></h1>
+        <div class="account-list">
+            <table>
+                <div class="container"></div>
+                <div class="form-group">
+                    <label for="username">Name account</label>
+                    <input type="text" id="username" name="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email</label>
+                    <input type="text" id="Email" name="Email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="Password">Password</label>
+                    <input type="password" id="Password" name="Password" placeholder="" onfocus="if(this.value === '•••••••••••') { this.value = ''; this.style.color='black'; }" onblur="if(this.value === '') { this.value = '•••••••••••'; this.style.color='gray';}"  value="•••••••••••" style="color: gray;">
+                </div>
+                <div class="form-group">
+                    <label for="Re-enter password">Re-enter password</label>
+                    <input type="password" id="Re-enter password" name="Re-enter password" placeholder="" value="•••••••••••" onfocus="if(this.value === '•••••••••••') { this.value = ''; this.style.color='black';}" 
+                    onblur="if(this.value === '') { this.value = '•••••••••••'; this.style.color='gray'; }"  style="color: gray;">
+                </div>
+                <div class="form-group">
+                    <label for="Full Name">Full Name</label>
+                    <input type="text" id="Full Name" name="Full Name" placeholder="Fullname";>
+                </div>
+                <div class="form-group">
+                    <label for="Sex">Sex</label> 
+                    <select id="Sex" name="Sex">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="birthday">Birthday</label>
+                    <input type="text" id="birthday" name="birthday" placeholder="_ _/_ _/_ _ _ _" maxlength="10" oninput="formatDate(this)" style="color: black;">
+                </div>
+                <div class="container icon-container"></div>
+                <div class="form-group">
+                    <span class="exit-link" onclick="exitFunction()">
+                        <div class="icon-text">
+                            <img src="https://static-00.iconduck.com/assets.00/exit-icon-1821x2048-50xh00pv.png" alt="Exit" width="20" height="20">
+                            <br>Exit
+                        </div>
+                    </span>
+                    <span class="exit-link" onclick="resetFunction()">
+                        <div class="icon-text">
+                            <img src="https://cdn-icons-png.flaticon.com/128/1828/1828890.png" alt="Reset" width="20" height="20">
+                            <br>Reset
+                        </div>
+                    </span>
+                    <span class="exit-link" onclick="confirmFunction()">
+                        <div class="icon-text">
+                            <img src="https://cdn-icons-png.flaticon.com/128/1828/1828953.png" alt="Confirm" width="20" height="20">
+                            <br>Confirm
+                        </div>
+                    </span>
+                </div>
+            </table>
+        </div>
+    </main>
+    <script>
+        function formatDate(input) {
+            var value = input.value.replace(/\D/g, '');
+            if (value.length > 2 && value.length <= 4) {
+                value = value.slice(0, 2) + '/' + value.slice(2);
+            } else if (value.length > 4) {
+                value = value.slice(0, 2) + '/' + value.slice(2, 4) + '/' + value.slice(4);
+            }
+            input.value = value;
+        }
+    </script>
+</body>     

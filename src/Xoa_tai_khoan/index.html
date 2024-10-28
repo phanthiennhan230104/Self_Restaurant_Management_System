@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="menu-icon">
+            <img src="https://cdn.icon-icons.com/icons2/1129/PNG/512/menubuttonofthreelines_79781.png" alt="Menu icon" width="20" height="30">
+        </div>
+        <div class="logo"> SELF RESTAURANT
+        </div>
+        <div class="profile-icon">
+            <img src="https://cdn-icons-png.flaticon.com/128/2522/2522138.png" alt="Profile Icon" width="30" height="30">
+        </div>
+    </header>
+    <div class="divider"></div>
+    <main>
+        <h1><b>DELETE ACCOUNT</b></h1>
+        <div class="account-list">
+            <table>
+                <div class="container"></div>
+                <div class="form-group">
+                    <label for="username">Account name to be deleted</label>
+                    <input type="text" id="username" name="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="fullname">Full name of account holder</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Fullname">
+                </div>
+                <div class="form-group">
+                    <label for="Lido">Reason for deletion(If any): <br> (Check the reason box)</label>
+                    <div class="white-box">Quit one's job</div>
+                    <input type="checkbox" id="lydo1" name="lydo1">
+                </div>
+                <!-- <div class="container icon-container"></div> -->
+                <div class="form-group">
+                    <div class="white-box2">Use new account</div>
+                    <input type="checkbox" id="lydo2" name="lydo2">
+                </div>
+                <div class="form-group">
+                    <div class="white-box2">Other</div>
+                    <input type="checkbox" id="lydo2" name="lydo2">
+                </div>
+                <div class="container icon-container"></div>
+                <div class="form-group">
+                    <span class="exit-link" onclick="exitFunction()">
+                        <div class="icon-text">
+                            <img src="https://static-00.iconduck.com/assets.00/exit-icon-1821x2048-50xh00pv.png" alt="Exit" width="30" height="30">
+                            <br>Exit
+                        </div>
+                    </span>
+                    <span class="exit-link" onclick="resetFunction()">
+                        <div class="icon-text">
+                            <img src="https://cdn-icons-png.flaticon.com/128/1828/1828890.png" alt="Reset" width="30" height="30">
+                            <br>Reset
+                        </div>
+                    </span>
+                    <span class="exit-link" onclick="confirmFunction()">
+                        <div class="icon-text">
+                            <img src="https://cdn-icons-png.flaticon.com/128/1828/1828953.png" alt="Confirm" width="30" height="30">
+                            <br>Confirm
+                        </div>
+                    </span>
+                </div>
+            </table>
+        </div>
+    </main>
+</body>     

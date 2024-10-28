@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid black; 
+    width: 950px;
+    height: 650px;
+}
+
+.container {
+    margin: 20px;
+}
+
+.icon-container {
+    margin-top: 50px; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #f0f0f0;
+    padding: 0px;
+    margin-top: 20px;
+    width: 30%;
+    text-align: left;
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+    margin: 10px; 
+}
+
+.menu-icon {
+    display: flex;
+    gap: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.logo {
+    font-size: 23px;
+    align-items: center;
+    font-weight: bold;
+    text-shadow: 2px 8px 4px rgba(0, 0, 0, 0.3);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.profile-icon img {
+    margin-left: 10px;
+}
+
+.divider {
+    width: 2px; 
+    height: 95%; 
+    background-color: black; 
+    margin: 10px 0px; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    width: 70%;
+}
+
+h1 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.account-list {
+    background-color: #07b7f7;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%; 
+    max-width: 800px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 45px ;
+}
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+    font-weight: normal;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+    background-color: #07b7f7;
+}
+
+input[type="text"] {
+    background-color: white; 
+    justify-content: flex-start;
+    border: 1px solid #ccc; 
+    padding: 5px;
+    border-radius: 20px; 
+    font-size: 20px;
+    text-align: left;
+    width: 45%; /* Để phù hợp với chiều rộng của cột */
+}
+
+input[type="checkbox"] {
+    background-color: white; 
+    justify-content: flex-end;
+    width: 20px; 
+    height: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 0px; 
+    margin-left: 40px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-bottom: 20px; /* Khoảng cách giữa các nhóm */
+    width: 100%;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 20px;
+    justify-content: flex-start;
+    text-align: left;
+    color: black;
+    padding-left: 20px; 
+    margin-right: 30px;
+}
+
+.white-box {
+    background-color: white;  
+    padding: 10px;            
+    border-radius: 20px;      
+    border: 1px solid #ccc;   
+    display: flex;            
+    align-items: center;   
+    margin-left: -40px;
+    font-size: 19px;   
+    gap: 10px;               
+    width: fit-content;   
+}
+
+.white-box2 {
+    background-color: white;  
+    padding: 10px;            
+    border-radius: 20px;      
+    border: 1px solid #ccc;   
+    display: flex;            
+    align-items: center;   
+    margin-left: 320px;
+    font-size: 19px;   
+    gap: 10px;               
+    width: fit-content;   
+}
+
+.exit-link {
+    color: #141515; 
+    text-decoration: none; 
+    cursor: pointer; 
+    font-size: 24px; 
+    margin-left: 15px;
+}
+
+.exit-link:hover {
+    text-decoration: underline; 
+    color: #0056b3; 
+}
+
+
+
